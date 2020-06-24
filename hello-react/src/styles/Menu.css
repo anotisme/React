@@ -1,0 +1,22 @@
+.menu {
+    text-align: left;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.menu .nav-link {
+    display: block;
+    padding: 15px 25px;
+}
+
+.header-logo {
+    float: left;
+}
+
+.sh-table-cell {
+    padding: 10px 0;
+}

@@ -1,0 +1,24 @@
+.footer {    
+    padding: 60px 0;
+    background-color: #363636;
+    color: #fff;
+    text-align: left;
+}
+
+.product_list_widget a img {
+    position: absolute;
+    width: 65px!important;
+    margin-left: 0!important;
+    left: 0;
+    float: right;
+    height: auto;
+}
+
+.product_list_widget li {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 15px!important;
+    min-height: 65px!important;
+    padding-left: 85px!important;
+}
