@@ -11,6 +11,8 @@ import {
     Route
   } from "react-router-dom";
 import './App.css';
+import CreateProduct from './components/products/CreateProduct';
+import ProductDetails from './components/products/ProductDetails';
 
 class App extends Component {
 	constructor(props) {
@@ -39,9 +41,9 @@ class App extends Component {
 	
 					<div className="content">
 						<Switch>
-							<Route exact path="/">
-								<Homepage />
-							</Route>
+							<Route exact path="/" component={Homepage}></Route>
+							<Route path="/create" component={CreateProduct}></Route>
+							<Route path="/product/:id" component={ProductDetails}></Route>
 							{
 								this.state.user ? 
 								(
@@ -50,12 +52,8 @@ class App extends Component {
 									</>
 								) : 
 								(<>
-									<Route path="/login">
-										<Login />
-									</Route>
-									<Route path="/register">
-										<Register />
-									</Route>
+									<Route path="/login" component={Login}></Route>
+									<Route path="/register" component={Register}></Route>
 								</>)
 							}
 						</Switch>

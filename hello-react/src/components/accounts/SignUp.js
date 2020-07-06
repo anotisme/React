@@ -48,12 +48,12 @@ class SignUp extends React.Component{
                                         
 										<div className="form-label-group">
 											<label htmlFor="firstName">First Name</label>
-											<input name="firstName" type="text" id="firstName" className="form-control" placeholder="First Name" autoFocus onChange={this.handleChange} />
+											<input name="firstName" type="text" id="firstName" className="form-control" placeholder="First Name" onChange={this.handleChange} />
 										</div>
                                         
 										<div className="form-label-group">
 											<label htmlFor="lastName">Last Name</label>
-											<input name="lastName" type="text" id="lastName" className="form-control" placeholder="Last Name" autoFocus onChange={this.handleChange} />
+											<input name="lastName" type="text" id="lastName" className="form-control" placeholder="Last Name" onChange={this.handleChange} />
 										</div>
 										<button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign Up</button>
 										<hr className="my-4" />

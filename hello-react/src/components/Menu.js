@@ -42,18 +42,18 @@ class Menu extends React.Component {
                             <li className="nav-item">
                                 <a className="nav-link active" href="/">Home</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" href="/create">Create Product</a>
-                            </li>
                             {
                                 this.state.user ?
                                 (<>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/create">Create Product</a>
+                                </li>
                                 <li className="btn-group nav-item">
                                     <button type="button" className="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {this.state.user.email}
                                     </button>
                                     <div className="dropdown-menu">
-                                        <a className="dropdown-item" onClick={() => fire.auth().signOut()}>Logout</a>
+                                        <button  href="#" className="dropdown-item" onClick={() => fire.auth().signOut()}>Logout</button >
                                     </div>
                                 </li>
                                 </>) : 
