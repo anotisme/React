@@ -2,6 +2,9 @@
     text-align: left;
     padding-bottom: 100px;
 }
+.new-arrivals a {
+    color: #363636;
+}
 .products .sh-woo-post-content-container {
     margin-top: 0;
     margin-bottom: 0;
@@ -17,7 +20,6 @@
     margin-right: 55px;
 }
 .products .additional-information {
-    padding-bottom: 10px;
     text-transform: uppercase;
     font-size: 13px;
 }
@@ -33,13 +35,44 @@ span.price {
     display: block;
 }
 span.woocommerce-Price-amount.amount {
-    font-size: 16px!important;
+    font-size: 16px;
     font-weight: 700;
-    opacity: 1!important;
+    opacity: 1;
 }
 .products del {
     padding-right: 5px;
 }
 .products del span {
-    color: #ccc!important;
+    color: #ccc;
+}
+.products .price {
+    width: auto;
+    float: left;
+}
+.add_to_cart_button {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    top: -35px;
+    background-color: #f2f2f2;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    left: 0;
+    margin-top: 0;
+    position: relative;
+    border-radius: 100px;
+    line-height: 40px;
+}
+.product-item figure {
+	background: #1abc9c;
+}
+.product-item figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+.product-item figure:hover img {
+	opacity: .5;
 }

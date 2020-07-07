@@ -29,7 +29,7 @@
 }
 
 .content {
-  padding: 75px 0 0;
+  padding-top: 75px;
 }
 
 .size-s {
@@ -52,15 +52,26 @@
   font-size: 48px;
 }
 
+.size-xxxxl {
+  font-size: 72px;
+}
+
 .App a {
   text-decoration: none;
 }
+
 .App ul {
   list-style: none;
   padding-left: 0;
 }
+
 ins {
   text-decoration: none;
+}
+
+.sh-heading-content {
+  font-weight: 400;
+  font-family: auto;
 }
 
 @keyframes App-logo-spin {

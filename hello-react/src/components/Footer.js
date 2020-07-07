@@ -7,13 +7,13 @@ function Footer() {
         <div className="container">
             <div className="row">
                 <div className="col-md-3 col-sm-12">
-                    <h2 className="sh-heading-content text-left size-s">PAYMENT METHOD</h2>
+                    <h2 className="text-left size-s">PAYMENT METHOD</h2>
                     <div className="text-block">
 	                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
-                    <h2 className="sh-heading-content text-left size-s">PAYMENT METHOD</h2>
+                    <h2 className="text-left size-s">PAYMENT METHOD</h2>
                     <div className="text-block">
                         <ul className="product_list_widget">
                             <li>
@@ -61,7 +61,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
-                    <h2 className="sh-heading-content text-left size-s">SHOPPING GUIDE</h2>
+                    <h2 className="text-left size-s">SHOPPING GUIDE</h2>
                     <div className="text-block">
                         <ul>
                             <li>
@@ -80,7 +80,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
-                    <h2 className="sh-heading-content text-left size-s">COMPANY</h2>
+                    <h2 className="text-left size-s">COMPANY</h2>
                     <div className="text-block">
                         <ul>
                             <li>

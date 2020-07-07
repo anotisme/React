@@ -5,6 +5,10 @@
     text-align: left;
 }
 
+.footer a {
+    color: #fff;
+}
+
 .product_list_widget a img {
     position: absolute;
     width: 65px!important;

@@ -1,30 +1,24 @@
 import React from 'react';
-import ProductList from './products/ProductList';
+import TrendingProducts from './products/TrendingProducts';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
-import './../styles/NewArrivals.css';
+import './../styles/Trending.css';
 
-class NewArrivals extends React.Component {
+class Trending extends React.Component {
     render() {
         const { products } = this.props;
         return (
-            <div className="new-arrivals">
+            <div className="trending-now">
                 <div className="container">
                     <div className="sh-heading">
                         <div className="sh-element-margin">
-                            <h2 className="sh-heading-content size-xxl text-center">New arrivals</h2>
+                            <h2 className="size-s text-left" style={{ fontSize: '24px' }}>TRENDING NOW</h2>
                         </div>
                     </div>
-                    <div className="vc_empty_space" style={{height: '20px'}}></div>
-                    <div className="sh-heading">
-                        <div className="sh-element-margin">
-                            <h2 className="size-s text-center">DENIM DREAMS</h2>
-                        </div>
-                    </div>
-                    <div className="vc_empty_space" style={{height: '70px'}}></div>
+                    <div className="vc_empty_space" style={{height: '40px'}}></div>
                     <div className="products">
-                        <ProductList products={products} />
+                        <TrendingProducts products={products} />
                     </div>
                 </div>
             </div>
@@ -43,4 +37,4 @@ export default compose(
         { collection: 'products' }
     ]),
     connect(mapStateToProps)
-)(NewArrivals);
+)(Trending);

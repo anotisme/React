@@ -1,0 +1,30 @@
+.subscribe {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background: #7a7a7a url(http://jevelin.shufflehound.com/fashion-shop/wp-content/uploads/sites/27/2018/03/Rectangle-333-copy-2.jpg?id=180);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.wpcf7-email {
+    border-radius: 5px;
+    line-height: 64px;
+    padding: 0 45px;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    text-align: center;
+}
+.wpcf7-submit {
+    border-radius: 5px;
+    line-height: 54px;
+    padding: 0 45px;
+    background-color: #f84258;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-width: 0;
+}

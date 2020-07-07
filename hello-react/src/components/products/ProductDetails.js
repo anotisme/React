@@ -22,10 +22,12 @@ const ProductDetails = (props) => {
                                         <div className="images">
                                             <figure className="woocommerce-product-gallery__wrapper">
                                                 <div className="product-image">
-                                                    <a href="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_1_1-1.jpg">
-                                                        <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_1_1-1-1024x1308.jpg" 
+                                                    { (product.image) ? 
+                                                    <a href={'/product' + product.id} ><img src={product.image} className="wp-post-image" style={{width: "100%"}}/></a> 
+                                                    : 
+                                                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5559325500_2_5_1-400x400.jpg" 
                                                         className="attachment-shop_single size-shop_single wp-post-image" alt="" style={{width: "100%"}}/>
-                                                    </a>
+                                                    }
                                                 </div>	
                                             </figure>
                                         </div>

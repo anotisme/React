@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const ProductSummary = ({product}) => {
     return (
         <div className="col-md-4">
             
             <div className="product-item">
-                <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" className="img-fluid" alt="" />
+                <figure>
+                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" className="img-fluid" alt="" />
+                </figure>
                 <div className="sh-woo-post-content-container">
                     <h2 className="woocommerce-loop-product__title">
                         <Link to={'/product/' + product.id}>
@@ -26,7 +30,9 @@ const ProductSummary = ({product}) => {
                             </span>
                         </ins>
                     </span>
-                    <a href={ product.id} className="button add_to_cart_button">Add to cart</a>
+                    <a href={ product.id} className="button add_to_cart_button">
+                        <FontAwesomeIcon icon={faCartPlus} />
+                    </a>
                 </div>
             </div>
         </div>
