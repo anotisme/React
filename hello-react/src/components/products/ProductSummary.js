@@ -9,7 +9,12 @@ const ProductSummary = ({product}) => {
             
             <div className="product-item">
                 <figure>
-                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" className="img-fluid" alt="" />
+                    { (product.downloadURLs) ? 
+                    <a href={'/product' + product.id} ><img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}}/></a> 
+                    : 
+                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" 
+                        className="attachment-shop_single size-shop_single img-fluid" alt="" style={{width: "100%"}}/>
+                    }
                 </figure>
                 <div className="sh-woo-post-content-container">
                     <h2 className="woocommerce-loop-product__title">

@@ -22,8 +22,10 @@ const ProductDetails = (props) => {
                                         <div className="images">
                                             <figure className="woocommerce-product-gallery__wrapper">
                                                 <div className="product-image">
-                                                    { (product.image) ? 
-                                                    <a href={'/product' + product.id} ><img src={product.image} className="wp-post-image" style={{width: "100%"}}/></a> 
+                                                    { (product.downloadURLs) ? 
+                                                    <a href={'/product' + product.id} >
+                                                        <img src={product.downloadURLs} className="wp-post-image" style={{width: "100%"}} alt=""/>
+                                                    </a> 
                                                     : 
                                                     <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5559325500_2_5_1-400x400.jpg" 
                                                         className="attachment-shop_single size-shop_single wp-post-image" alt="" style={{width: "100%"}}/>

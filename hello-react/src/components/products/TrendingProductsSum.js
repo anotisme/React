@@ -10,8 +10,14 @@ const TrendingProductsSum = ({product}) => {
                 <a href={ '/product' + product.id } className="product__link">
                     <div className="test">
                         <figure>
-                            <img width="100%" src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5593559500_2_5_1-400x400.jpg" 
-                            className="attachment-woocommerce_thumbnail" alt="" />
+                            { (product.downloadURLs) ? 
+                            <a href={'/product' + product.id} >
+                                <img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}} alt=''/>
+                            </a> 
+                            : 
+                            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" 
+                                className="attachment-shop_single size-shop_single img-fluid" alt="" style={{width: "100%"}}/>
+                            }
                         </figure>
                     </div>
                 </a>

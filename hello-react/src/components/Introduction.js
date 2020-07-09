@@ -109,7 +109,7 @@ class Introduction extends React.Component {
                             </div>
                             <div className="col-md-6 col-sm-12 right-side">
                                 <figure>
-                                    <img src="/assets/1.jpg" />
+                                    <img src="/assets/1.jpg" alt=''/>
                                 </figure>
                             </div>
                         </div>
