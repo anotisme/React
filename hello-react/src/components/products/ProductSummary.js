@@ -4,15 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 const ProductSummary = ({product}) => {
+    console.log(product)
     return (
         <div className="col-md-4">
             
             <div className="product-item">
                 <figure>
                     { (product.downloadURLs) ? 
-                    <a href={'/product' + product.id} ><img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}}/></a> 
+                    <a href={'/product/' + product.id} ><img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}} alt=""/></a> 
                     : 
-                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" 
+                    <img src={'/assets/default-placeholder-image.png'} 
                         className="attachment-shop_single size-shop_single img-fluid" alt="" style={{width: "100%"}}/>
                     }
                 </figure>

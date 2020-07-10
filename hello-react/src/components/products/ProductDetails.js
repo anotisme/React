@@ -23,11 +23,11 @@ const ProductDetails = (props) => {
                                             <figure className="woocommerce-product-gallery__wrapper">
                                                 <div className="product-image">
                                                     { (product.downloadURLs) ? 
-                                                    <a href={'/product' + product.id} >
+                                                    <a href={'/product/' + product.id} >
                                                         <img src={product.downloadURLs} className="wp-post-image" style={{width: "100%"}} alt=""/>
                                                     </a> 
                                                     : 
-                                                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5559325500_2_5_1-400x400.jpg" 
+                                                    <img src={'/assets/default-placeholder-image.png'} 
                                                         className="attachment-shop_single size-shop_single wp-post-image" alt="" style={{width: "100%"}}/>
                                                     }
                                                 </div>	
@@ -56,7 +56,7 @@ const ProductDetails = (props) => {
                                         <div className="product_meta">
                                             <span className="posted_in">
                                                 <span className="woo-meta-title">Category:</span>
-                                                <a href="https://jevelin.shufflehound.com/fashion-shop/product-category/women/dress-women/" rel="tag">{ product.category }</a>
+                                                <a href={'/product-category/' + product.category} rel="tag">{ product.category }</a>
                                             </span>
                                         </div>
                                     </div>

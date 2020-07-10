@@ -41,9 +41,9 @@ class App extends Component {
 	
 					<div className="content">
 						<Switch>
-							<Route exact path="/" component={Homepage}></Route>
-							<Route path="/create" component={CreateProduct}></Route>
-							<Route path="/product/:id" component={ProductDetails}></Route>
+							<Route exact path="/" component={Homepage} />
+							<Route path="/create" component={CreateProduct} />
+							<Route path="/product/:id" component={ProductDetails} />
 							{
 								this.state.user ? 
 								(
@@ -52,8 +52,8 @@ class App extends Component {
 									</>
 								) : 
 								(<>
-									<Route path="/login" component={Login}></Route>
-									<Route path="/register" component={Register}></Route>
+									<Route path="/login" component={Login} />
+									<Route path="/register" component={Register} />
 								</>)
 							}
 						</Switch>

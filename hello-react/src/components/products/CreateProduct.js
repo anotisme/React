@@ -57,8 +57,9 @@ class CreateProduct extends React.Component {
 	
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.createProduct(this.state);
-	}
+		this.props.createProduct(this.state);
+		this.props.history.push('/');
+	};
 	
     render() {
         return (

@@ -7,20 +7,18 @@ const TrendingProductsSum = ({product}) => {
     return (
         <div className="col-md-3">
             <div className="product-item">
-                <a href={ '/product' + product.id } className="product__link">
-                    <div className="test">
-                        <figure>
-                            { (product.downloadURLs) ? 
-                            <a href={'/product' + product.id} >
-                                <img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}} alt=''/>
-                            </a> 
-                            : 
-                            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/27/2018/03/5391345406_2_2_1-1-400x400.jpg" 
-                                className="attachment-shop_single size-shop_single img-fluid" alt="" style={{width: "100%"}}/>
-                            }
-                        </figure>
-                    </div>
-                </a>
+                <div className="test">
+                    <figure>
+                        { (product.downloadURLs) ? 
+                        <a href={'/product/' + product.id} >
+                            <img src={product.downloadURLs} className="img-fluid" style={{width: "100%"}} alt=''/>
+                        </a> 
+                        : 
+                        <img src={'/assets/default-placeholder-image.png'} 
+                            className="attachment-shop_single size-shop_single img-fluid" alt="" style={{width: "100%"}}/>
+                        }
+                    </figure>
+                </div>
                 <div className="sh-woo-post-content-container">
                     <h2 className="woocommerce-loop-product__title">
                         <Link to={'/product/' + product.id}>
